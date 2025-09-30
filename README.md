@@ -4,8 +4,7 @@
 
 Este repositório contém os testes automatizados da aplicação [PGATS-02
 API](https://github.com/Weberthsm/pgats-02-api).\
-Foram implementados testes de integração e de performance para garantir
-a qualidade e estabilidade da aplicação.
+Foram implementados testes de integração e de performance com foco em qualidade e estabilidade da aplicação.
 
 ## Tecnologias utilizadas
 
@@ -49,7 +48,7 @@ obrigatória:
     git clone https://github.com/Weberthsm/pgats-02-api-tests.git
     ```
 
-2.  Acesse a pasta do projeto:
+2.  Acesse ou crie a  pasta do projeto em seu computador:
 
     ``` bash
     cd pgats-02-api-tests
