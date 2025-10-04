@@ -5,8 +5,6 @@ const postUsersRegister = require('../../fixtures/postUsersRegister.json');
 const Fakerator = require("fakerator");
 const fakerator = Fakerator();
 
-//const firstName = fakerator.names.firstName();
-
 
 describe(' users register',()=>{
     describe('POST /users/register',()=>{
