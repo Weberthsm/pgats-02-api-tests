@@ -2,13 +2,18 @@ const request  = require('supertest');
 const {expect} = require('chai')
 require('dotenv').config();
 const postUsersRegister = require('../../fixtures/postUsersRegister.json');
+const Fakerator = require("fakerator");
+const fakerator = Fakerator();
+
+//const firstName = fakerator.names.firstName();
+
 
 describe(' users register',()=>{
     describe('POST /users/register',()=>{
         it('Deve retornar 201 quando registrar um novo usuário',async ()=>{
             
             const bodyPostUsersRegister = structuredClone(postUsersRegister);    
-           // bodyPostUsersRegister.username = fakerator.names.firstName();;        
+            bodyPostUsersRegister.username = fakerator.names.firstName();;        
             
             const response = await request(process.env.BASE_URL)
             .post('/users/register')
